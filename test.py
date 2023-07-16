@@ -16,12 +16,9 @@ from torchvision.utils import save_image
 
 if os.path.exists('result') is False:
     os.mkdir('result')
-if os.path.exists('datasets') is False:
-    flag = False
-    print('Please put the data in the data folder')
 
 # read the image
-path = 'datasets/abandonedfactory/Easy/P001/image_left/'
+path = '/zihao/datasets/abandonedfactory/Easy/P001/image_left/'
 files = glob.glob(path + '*.png')
 files.sort()
 for idx, file in enumerate(files):
