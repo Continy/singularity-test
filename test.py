@@ -18,7 +18,7 @@ if os.path.exists('result') is False:
     os.mkdir('result')
 
 # read the image
-path = '/zihao/datasets/tartanair/abandonedfactory/Easy/P001/image_left/'
+path = '/zihao/datasets/Data/P001/image_left/'
 files = glob.glob(path + '*.png')
 files.sort()
 for idx, file in enumerate(files):
