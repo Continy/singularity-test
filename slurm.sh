@@ -16,5 +16,5 @@
 # Executable
 EXE=/bin/bash
 
-singularity shell --bind /project/learningvo/tartanair_v1_5/abandonedfactory/Data:/zihao/datasets:ro,/data2/datasets/yuhengq/zihao/singularity-test:/zihao/singularity-test /data2/datasets/yuhengq/zihao/flowformer.sif
+singularity shell --bind /project/learningvo/tartanair_v1_5/abandonedfactory:/zihao/datasets:ro,/data2/datasets/yuhengq/zihao/singularity-test:/zihao/singularity-test /data2/datasets/yuhengq/zihao/flowformer.sif
 bash /zihao/singularity-test/run_script.sh
