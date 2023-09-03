@@ -22,6 +22,8 @@ path = '/zihao/datasets/Data/P001/image_left/'
 files = glob.glob(path + '*.png')
 files.sort()
 for idx, file in enumerate(files):
+    if idx == 10:
+        break
     #torch加高斯噪声，标准差为0.1，保存
     img = cv2.imread(file)
     img = torch.from_numpy(img)
